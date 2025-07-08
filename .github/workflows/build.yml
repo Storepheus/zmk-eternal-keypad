@@ -53,7 +53,7 @@ jobs:
       - name: Rename zmk.uf2
         run: cp build/zephyr/zmk.uf2 eternal_keypad_lefty_nice_nano_v2.uf2
       - name: Archive (Eternal Keypad)
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: firmware
           path: eternal_keypad_lefty_nice_nano_v2.uf2
